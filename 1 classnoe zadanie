@@ -1,0 +1,12 @@
+from random import *
+
+len_of_array = int(input())
+my_list = [round(randint(0,100) + random(), 2) for x in range(len_of_array)]
+
+def swap_element(array):
+  print(f'Start list is {array}')
+  print(f'Len of list {len(array)}')
+  array[0], array[-1] = array[-1], array[0]
+  print(f'Changed list is {array}')
+
+swap_element(my_list)
